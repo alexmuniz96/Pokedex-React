@@ -1,0 +1,39 @@
+:root {
+  --highlights-green: #1C8696;
+  --gradient: linear-gradient(270deg, #25C5A2 0%, #95D08A 96.76%);
+  --light-green: rgba(200, 254, 189, 0.5);
+  --card-green: rgba(227, 255, 222, 0.5);
+
+  //Pokemons types
+  --fighting: #CE4069;
+  --rock: #C7B78B;
+  --fire: #FF9C54;
+  --steel: #5A8EA1;
+  --flying: #8FA8DD;
+  --water: #4D90D5;
+  --ghost: #5269AC;
+  --bug: #90C12C;
+  --grass: #63BB5B;
+  --dark: #5A5366;
+  --ground: #D97746;
+  --dragon: #0A6DC4;
+  --ice: #74CEC0;
+  --electric: #F3D23B;
+  --normal: #9099A1;
+  --fairy: #EC8FE6;
+  --poison: #AB6AC8;
+  --psychic: #F97176;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+}
