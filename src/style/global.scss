@@ -1,5 +1,8 @@
 :root {
   --highlights-green: #1C8696;
+  --light-green-stroke: #AAE0D6;
+  --background: #F8FFF8;
+  --background-card: rgba(227, 255, 222, 0.5);
   --gradient: linear-gradient(270deg, #25C5A2 0%, #95D08A 96.76%);
   --light-green: rgba(200, 254, 189, 0.5);
   --card-green: rgba(227, 255, 222, 0.5);
@@ -36,4 +39,8 @@
 html {
   font-size: 62.5%;
   font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: var(--background);
 }

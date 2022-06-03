@@ -1,0 +1,43 @@
+.headerContainer {
+  background: var(--light-green);
+
+  .headerContent {
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+
+    form {
+      .contentForm {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        input {
+          border-radius: 8px;
+          border: 1px solid var(--light-green-stroke);
+          font-size: 1.4rem;
+          color: var(--highlights-green);
+          width: 305px;
+          padding: 12px 10px;
+
+          &::placeholder {
+            color: var(--highlights-green);
+          }
+
+          &:focus {
+            outline: none;
+            border: 1px solid var(--highlights-green);
+          }
+        }
+
+        picture {
+          position: absolute;
+          right: 10px;
+        }
+      }
+    }
+  }
+}
