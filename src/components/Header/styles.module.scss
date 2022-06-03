@@ -1,5 +1,24 @@
 .headerContainer {
   background: var(--light-green);
+  transition: all 0.2s ease-in-out;
+  position: inherit;
+
+  &.active {
+    width: 100%;
+    background: var(--gradient);
+    position: fixed;
+    animation: smoothScroll 0.2s ease-in-out;
+
+    @keyframes smoothScroll {
+      0% {
+        transform: translateY(-40px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+    }
+  }
 
   .headerContent {
     max-width: 1200px;

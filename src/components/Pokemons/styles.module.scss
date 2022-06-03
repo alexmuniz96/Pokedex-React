@@ -6,12 +6,16 @@
   section {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .card {
       background: var(--background-card);
       border-radius: 8px;
       padding: 20px;
+      margin-top: 20px;
       width: clamp(200px, 385px, 400px); //mudar para clamp
+      box-shadow: var(--card-shadow);
+      cursor: pointer;
 
       header {
         display: flex;
@@ -33,6 +37,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background: url('../../svgs/pokebol-bg.svg') no-repeat right;
+        background-size: contain;
 
         .types {
           display: flex;
@@ -46,6 +52,7 @@
             font-size: 1.6rem;
             background: var(--grass);
             color: #fff;
+            box-shadow: var(--card-shadow);
           }
         }
       }

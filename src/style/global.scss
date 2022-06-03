@@ -1,11 +1,12 @@
 :root {
+  --background: #F8FFF8;
   --highlights-green: #1C8696;
   --light-green-stroke: #AAE0D6;
-  --background: #F8FFF8;
-  --background-card: rgba(227, 255, 222, 0.5);
-  --gradient: linear-gradient(270deg, #25C5A2 0%, #95D08A 96.76%);
   --light-green: rgba(200, 254, 189, 0.5);
+  --gradient: linear-gradient(270deg, #25C5A2 0%, #95D08A 96.76%);
+  --background-card: rgba(227, 255, 222, 0.5);
   --card-green: rgba(227, 255, 222, 0.5);
+  --card-shadow: -4px 4px 4px rgba(170, 224, 214, 0.12);
 
   //Pokemons types
   --fighting: #CE4069;
