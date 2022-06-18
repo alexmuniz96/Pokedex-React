@@ -1,0 +1,12 @@
+.pokemonsContainer {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 55px 0;
+
+  section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+}
