@@ -1,5 +1,4 @@
 import styles from './styles.module.scss'
-import bulbasaur from '../../images/bulbasaur.png'
 import PokemonCard from '../../components/PokemonCard'
 
 export default function PokemonPage() {
@@ -11,6 +10,8 @@ export default function PokemonPage() {
   return (
     <main className={styles.pokemonsContainer}>
       <section>
+        <PokemonCard />
+        <PokemonCard />
         <PokemonCard />
       </section>
     </main>
