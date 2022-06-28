@@ -1,4 +1,3 @@
-import axios from 'axios';
 import apiBaseUrl from './api';
 
 export interface PokemonListInterface {

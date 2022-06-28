@@ -1,12 +1,16 @@
 import styles from './styles.module.scss'
 import bulbasaur from '../../images/bulbasaur.png'
+import { PokemonListInterface } from '../../services/ListPokemon'
 
+interface PokedexCardProps {
+  pokemon: PokemonListInterface;
+}
 
-export default function PokemonCard() {
+export default function PokemonCard({ pokemon }: PokedexCardProps) {
   return (
     <div className={styles.card}>
       <header>
-        <h2>Bulbasaur</h2>
+        <h2>{pokemon.name}</h2>
         <p>#001</p>
       </header>
       <div className={styles.cardContent}>
