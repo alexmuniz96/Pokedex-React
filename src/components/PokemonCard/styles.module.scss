@@ -41,9 +41,15 @@
         border-radius: 20px;
         padding: 5px 20px;
         font-size: 1.6rem;
-        background: var(--grass);
+        background: var(--highlights-green);
         color: #fff;
         box-shadow: var(--card-shadow);
+      }
+    }
+
+    .pokemonPhoto {
+      img {
+        max-width: 130px;
       }
     }
   }

@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react'
 import styles from './styles.module.scss'
 import PokemonCard from '../../components/PokemonCard'
-import { listPokemon, PokemonListInterface } from '../../services/ListPokemon';
-
-
+import { listPokemon } from '../../services/ListPokemon';
+import { PokemonDetail } from '../../interfaces/PokemonDetail';
 
 export default function PokemonPage() {
-  const [pokemonData, setPokemonData] = useState<PokemonListInterface[]>([]);
+  const [pokemonData, setPokemonData] = useState<PokemonDetail[]>([]);
 
   useEffect(() => {
 

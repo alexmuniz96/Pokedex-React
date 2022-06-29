@@ -1,10 +1,9 @@
 import styles from './styles.module.scss';
-import bulbasaur from '../../images/bulbasaur.png';
-import { PokemonListInterface } from '../../services/ListPokemon';
 import { useNavigate } from 'react-router-dom';
+import { PokemonDetail } from '../../interfaces/PokemonDetail';
 
 interface PokedexCardProps {
-  pokemon: PokemonListInterface;
+  pokemon: PokemonDetail;
 }
 
 export default function PokemonCard({ pokemon }: PokedexCardProps) {
@@ -18,15 +17,14 @@ export default function PokemonCard({ pokemon }: PokedexCardProps) {
     <div onClick={handleClick} className={styles.card}>
       <header>
         <h2>{pokemon.name}</h2>
-        <p>#001</p>
+        <p>{pokemon.id}</p>
       </header>
       <div className={styles.cardContent}>
         <div className={styles.types}>
-          <span>Grass</span>
-          <span>Poison</span>
+          {pokemon.types.map((type) => <span>{type.type.name}</span>)}
         </div>
         <div className={styles.pokemonPhoto}>
-          <img src={bulbasaur} alt="bulbasaur" />
+          <img src={pokemon.sprites.other?.home.front_default} alt={pokemon.name} />
         </div>
       </div>
     </div>
