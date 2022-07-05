@@ -27,7 +27,7 @@ export default function Header() {
       className={`${styles.headerContainer} ${headerChange ? styles.active : ''}`}
     >
       <div className={styles.headerContent}>
-        <picture><Logo /></picture>
+        <picture><Logo fill={`${headerChange ? '#ffffff' : '#1C8696'}`} /></picture>
         <form>
           <div className={styles.contentForm}>
             <input placeholder={`Busque pelo nome`} />
